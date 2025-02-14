@@ -35,9 +35,12 @@ getTracks (baseEndpoint)
     }
 
 /*function openModal() {
+    const body = document.querySelector('body')
     const modal = document.createElement('div')
+    modal.style.display = 'none'
+    modal.style.position = 'fixed'
     modal.classList.add('modal')
-    eminemDiv.appendChild(modal)
+    body.appendChild(modal)
 
     const albumListWrapper = document.createElement('ol')
     modal.appendChild(ol)
@@ -88,7 +91,7 @@ function renderTrack(tracks) {
         trackBody.appendChild(trackSubtitle)                            // Appendo il sottotitoll al body
 
         const trackButton = document.createElement('button')
-        //trackButton.type = button
+        trackButton.type = "button"
         trackButton.classList.add('btn-primary')
         trackButton.innerText = "Crea lista"
         trackBody.appendChild(trackButton)                              //Appendo il bottone
